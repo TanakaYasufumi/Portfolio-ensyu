@@ -1,0 +1,86 @@
+/*
+* 画面のスタイルシート
+*/
+body{
+    margin: 0;
+    min-width: 1076px;
+    font-family: Avenir;
+}
+
+/*
+* headerのスタイルシート
+*/
+.block-header{
+    height: 1080px;
+    background: linear-gradient(#75BDD3, #55C4BB);
+    color: white;
+}
+
+.link-header{
+    padding-top: 13px;
+    padding-left: 5px;
+}
+
+.link-header a{
+    color: white;
+    font-size: 17px;
+    padding: 0 15px;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.link-header a:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;/*線の上下位置*/
+    display: inline-block;
+    width: 30px;/*線の長さ*/
+    height: 2px;/*線の太さ*/
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);/*位置調整*/
+    background-color: #6AEDC8;/*線の色*/
+    border-radius: 2px;/*線の丸み*/
+}
+
+
+
+
+.profile-header{
+    margin-top: 297px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.profile-header img{
+    width: 463px;
+    height: 463px;
+    padding: 24px;
+    margin-right: 73px;
+    border: solid white 2px;
+    border-radius: 50%;
+}
+
+.profile-header span{
+    display: inline-block;
+    font-size: 60px;
+    padding: 11px 0 20.5px;
+    margin: 0;
+    letter-spacing: 0.2em;
+    border-bottom: solid #6AEDC8 2px;
+    font-weight: bold;
+}
+
+.profile-header .name p{
+    font-size: 45px;
+    padding: 11px 0;
+    margin: 0;
+    letter-spacing: 0.2em;
+    font-weight: 100;
+}
+
