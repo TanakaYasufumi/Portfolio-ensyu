@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--タイトルの設定-->
+    <!--タイトル設定-->
     <title>Portfolio</title>
-    <!--スタイルシート-->
+    <!--スタイルシート読み込み-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,7 +27,102 @@
                     <p>やすふみ田中</p>
                     <p>Web Application Developer</p>
                 </div>
-        </div>>
+        </div>
     </header>
+
+    <!--
+       mainタグの作成
+       ・aboutとprojects用の箱作成 
+    -->
+    <div class="block-main">
+        <!--
+            aboutの箱
+        -->
+        <div class="box-about">
+            <h2 class="sub-title">About</h2>
+            <img src="img/haguruma.png" alt="">
+            <div class="text-about">
+                <p class="skill-about">HTML / CSS / JavaScript / React JS / Redux / Python / Django / ExpressJS /
+                    AWS (Basics) / Docker (Basics)</p>
+                <p class="profile-about">妻は美幼女、息子は紳士の泰史です。妻は美幼女、息子は紳士の泰史です。妻は美幼女、息子は紳士の泰史です。妻は美幼女、息子は紳士の泰史です。ここに自己紹介を書きます。ここに自己紹介を書きます。ここに自己紹介を書きます。ここに自己紹介を書きます。ここに自己紹介を書きます。</p>
+                <p class="adress-about">support@techis.io</p>
+            </div>    
+            <ul class="icon-list">
+                <li>
+                    <a href="">
+                        <img src="img/github.png" alt="Githubアイコン">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/linkedIn_PNG23.png" alt="Inアイコン">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--
+            projectsの箱
+        -->
+        <div class="box-projects">
+            <h2 class="sub-title">Projects</h2>
+            <img src="img/shikiri.png" alt="">
+            <ul class="works-list">
+                <li>
+                    <img src="img/twitterクローン.png" alt="Twitterクローンの画像">
+                    <h3>Twitterクローン</h3>
+                    <p>Twitterの複製アプリです。ツイートを投稿できます。<br> MySQLを利用しています。</p>
+                    <h4>テストアカウント</h4>
+                    <span>E-mail : 123@gmail.com <br>Pass : 123</span>
+                    <div class="link">
+                        <a href="">Webサイト</a>
+                        <a href="">Github</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/Netflixクローン.png" alt="Nexflixクローンの画像">
+                    <h3>Netflixクローン</h3>
+                    <p>Netflixの複製サービスです。<br>Laravel / MySQLを利用しています。</p>
+                    <h4>テストアカウント</h4>
+                    <span>E-mail : 123@gmail.com <br>Pass : 123</span>
+                    <div class="link">
+                        <a href="">Webサイト</a>
+                        <a href="">Github</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!--
+            contactの箱
+        -->
+        <div class="box-contact">
+            <h2 class="sub-title">Contact</h2>
+            <img src="img/Contact-icon.png" alt="">
+            <ul class="contact-list">
+                <li>
+                    <div class="contact-icon">
+                        <img src="img/phone-icon.png" alt="">
+                        <p class="contact-title">Phone</p>
+                        <p class="contact-adress">+12 345 6789</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="contact-icon">
+                        <img src="img/mail-icon.png" alt="">
+                        <p class="contact-title">Mail</p>
+                        <p class="contact-adress">Support@techis.com</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    
+    <!--
+        footerの箱
+    -->
+    <footer class="block-footer">
+        <p> ©️ Yasufumi Tanaka All rights reserved</p>
+    </footer>
 </body>
 </html>

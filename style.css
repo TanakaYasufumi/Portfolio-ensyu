@@ -7,6 +7,11 @@ body{
     font-family: Avenir;
 }
 
+.sub-title{
+    font-size: 60px;
+    letter-spacing: 0.2em;
+    font-weight: bolder;
+}
 /*
 * headerのスタイルシート
 */
@@ -14,6 +19,7 @@ body{
     height: 1080px;
     background: linear-gradient(#75BDD3, #55C4BB);
     color: white;
+    position: relative;
 }
 
 .link-header{
@@ -46,29 +52,31 @@ body{
     border-radius: 2px;/*線の丸み*/
 }
 
-
-
-
-.profile-header{
-    margin-top: 297px;
+.profile-header {
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom :0;
+    margin:  auto;
 }
 
 .profile-header img{
-    width: 463px;
-    height: 463px;
+    width: 370px;
+    height: 370px;
     padding: 24px;
-    margin-right: 73px;
+    margin-right: 50px;
     border: solid white 2px;
     border-radius: 50%;
 }
 
 .profile-header span{
     display: inline-block;
-    font-size: 60px;
+    font-size: 48px;
     padding: 11px 0 20.5px;
     margin: 0;
     letter-spacing: 0.2em;
@@ -77,10 +85,219 @@ body{
 }
 
 .profile-header .name p{
-    font-size: 45px;
+    font-size: 36px;
     padding: 11px 0;
     margin: 0;
     letter-spacing: 0.2em;
     font-weight: 100;
 }
 
+/*
+*[main]のスタイルシート
+*/
+
+.block-main{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/*
+*[About]のスタイルシート
+*/
+
+.box-about{
+    color: #4D4C4C;
+}
+
+.text-about{
+    font-weight: lighter;
+}
+.skill-about{
+    font-size: 35px;
+    max-width: 1076px;
+    margin: 100px auto 30px;
+}
+
+.profile-about{
+    font-size: 30px;
+    max-width: 1076px;
+    margin: 30px auto;
+}
+
+.adress-about{
+    font-size: 30px;
+}
+
+.icon-list{
+    list-style: none;
+    width: 100%;
+    max-width: 247px;
+    margin: 30px auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-list li{
+    margin-right: 50px;
+}
+
+.icon-list li:last-child{
+    margin-right: 0;
+}
+
+/*
+*[Projects]のスタイルシート
+*/
+
+.box-projects{
+    background-color: #53BD9D;
+    height: 1816px;
+    -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 75%);
+    clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 75%);  
+    color: white;
+    text-align: center;
+}
+
+.box-projects .sub-title{
+    padding-top: 180px;
+}
+
+.works-list{
+    list-style: none;
+    width: 100%;
+    max-width: 1076px;
+    margin: 30px auto;
+    padding: 0;
+    text-align: left;
+    overflow: hidden;
+}
+
+.works-list li{
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    float: left;
+    margin-right: 276px;
+}
+
+.works-list li:last-child{
+    margin-right: 0;
+}
+
+.works-list li img{
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.works-list li h3{
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+.works-list li p{
+    width:calc(100vw - 50px);
+    font-size: 15px;
+    letter-spacing: 0.2em;
+}
+
+.works-list li .link{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-top: 15px;
+}
+
+.works-list li .link a{
+    padding: 5px 20px;
+    margin-right: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    border: solid 2px white;
+    text-decoration: none;
+}
+
+/*
+*[contact]のスタイルシート
+*/
+.box-contact{
+    color: #4D4C4C;
+}
+
+.box-contact .sub-title{
+    margin-bottom: 10px;
+}
+
+.contact-list{
+    list-style: none;
+    width: 100%;
+    max-width: 1076px;
+    margin: 30px auto;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.contact-list li{
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    float: left;
+    margin-right: 276px;
+}
+
+.contact-list li:last-child{
+    margin-right: 0px;
+}
+
+.contact-icon{
+    margin-top: 100px;
+    background-color: #DEDADA;
+    border-top: solid 3px #53BD9D;
+    font-size: 30px;
+    letter-spacing: 0.2em;
+}
+
+.contact-icon img{
+    margin-top: 40px;
+}
+
+.contact-title{
+    position: relative;
+}
+
+.contact-title:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -30px;/*線の上下位置*/
+    display: inline-block;
+    width: 100px;/*線の長さ*/
+    height: 3px;/*線の太さ*/
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);/*位置調整*/
+    background-color: #4D4C4C;/*線の色*/
+    border-radius: 2px;/*線の丸み*/
+}
+
+.contact-icon .contact-adress{
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+/*
+*footerのスタイルシート
+*/
+
+.block-footer p{
+    font-size: 17px;
+    color: #938F8F;
+    background-color: #F5F4F4;
+    height: 130px;
+    text-align: center;
+    line-height: 130px;
+}
